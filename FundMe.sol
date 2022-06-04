@@ -21,7 +21,6 @@ contract FundMe {
   }
 
   function fund() public payable {
-    require(msg.value == 100000000000000000);
     addressToValue[msg.sender] += msg.value;
   }
 
